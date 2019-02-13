@@ -29,6 +29,15 @@ yarn global add http-server => http-server
 web-push send-notification --endpoint='{{USE THE ENDPOINT RETURNED AFTER SUBSCRIBING IN FRONT-END}}' --vapid-subject='{{VAPID SUBJECT}}' --vapid-pubkey={{VAPID PUBKEY}} --vapid-pvtkey={{VAPID PRIVATE KEY}}
 ```
 
+6- Test on Remote Device :
+
+Web Push notification depends on the Service worker, that need https to be installed.
+`ngrok` can help us here :
+```
+ngrok http {{SERVER PORT}}
+```
+`Remote Devices` in Chrome can help us for debugging
+
 ## More Resources :
 [https://github.com/web-push-libs/web-push](https://github.com/web-push-libs/web-push)
 
